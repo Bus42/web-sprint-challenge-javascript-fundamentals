@@ -65,7 +65,7 @@ displayNames will be an array of strings, and each string should follow this pat
 
 function animalNames(data) {
     const displayNames = [];
-    data.forEach(animal => displayNames.push(`name: ${animal.animal_name}, scientific: ${animal.scientific_name}`));
+    data.forEach(d => displayNames.push(`name: ${d.animal_name}, scientific: ${d.scientific_name}`));
     return displayNames
 }
 
@@ -76,8 +76,12 @@ Using lowerCaseNames use .map() to create a new array of strings with the animal
 For example: ['jackal, asiatic', .....]
 */
 
-function lowerCaseNames( /*Your Code Here*/ ) {
-    /*Your Code Here*/
+function lowerCaseNames(data) {
+    const toLowerCase = [];
+    data.map(i => {
+        toLowerCase.push(i.animal_name.toLowerCase());
+    })
+    return toLowerCase
 }
 
 
