@@ -164,7 +164,8 @@ function CuboidMaker(props) {
   Create a method called volume using CuboidMaker's prototype that returns the volume of a given cuboid's length, width, and height
   Formula for cuboid volume: length * width * height   */
 
-
+CuboidMaker.prototype.volume = function() { return this.length * this.width * this.height };
+// ----> Question for review: Can you explain why it doesn't work when volume() is declared as an arrow function? <----
 
 
 
