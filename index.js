@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 // testing CodeGrade GitHub integration
 
 //🚀🚀🚀  Topic #1 Closures 🚀🚀🚀//
@@ -18,7 +19,7 @@ function myFunction() {
 myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
-
+// Because it is in the same closure eg: myfunction()
 
 
 
