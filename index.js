@@ -118,29 +118,22 @@ function USApop(data) {
  * The consume function should return the invocation of cb, passing a and b into cb as arguments
  */
 
-function consume(a, b, cb) {
-    return cb(a, b)
-}
+const consume = (a, b, cb) => cb(a, b);
+
 
 
 /* 🦁🦁🦁 Step 2: Create several functions to callback with consume(); 🦁🦁🦁 */
 // 🦁🦁🦁 Use add to return the sum of two numbers 🦁🦁🦁
 
-function add(num1, num2) {
-    return num1 + num2
-}
+const add = (num1, num2) => num1 + num2;
 
 // 🦁🦁🦁 Use multiply to return the product of two numbers 🦁🦁🦁
 
-function multiply(num1, num2) {
-    return num1 * num2
-}
+const multiply = (num1, num2) => num1 * num2;
 
 // 🦁🦁🦁 Use greeting to accept a first and last name and return "Hello {first-name} {last-name}, nice to meet you!" 🦁🦁🦁
 
-function greeting(firstName, lastName) {
-    return `Hello ${firstName} ${lastName}, nice to meet you!`
-}
+const greeting = (firstName, lastName) => `Hello ${firstName} ${lastName}, nice to meet you!`;
 
 // 🦁🦁🦁 Step 3: Check your work by un-commenting the following calls to consume(): 🦁🦁🦁 
 // ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️
@@ -160,8 +153,10 @@ console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice t
 /* 🐴🐴🐴 Step 1: Base Constructor 🐴🐴🐴
  Use the constructor function named CuboidMaker to accept properties for length, width, and height which can be initialized as an object
 */
-function CuboidMaker( /*Your Code Here */ ) {
-    /*Your Code Here */
+function CuboidMaker(props) {
+    this.length = props.length;
+    this.width = props.width;
+    this.height = props.height;
 }
 
 
